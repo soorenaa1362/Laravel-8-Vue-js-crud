@@ -12,7 +12,7 @@
                         <label class="mt-2">توضیحات</label>
                         <input type="text" class="form-control mt-2" v-model="post.description">
                     </div>
-                    <button type="submit" class="btn btn-primary text-white mt-3">بروز رسانی</button>
+                    <button type="submit" class="btn btn-success text-white mt-3">بروز رسانی</button>
                 </form>
             </div>
         </div>
@@ -39,7 +39,7 @@
                 this.axios
                     .post(`http://127.0.0.1:8000/api/post/update/${this.$route.params.id}`, this.post)
                     .then((response) => {
-                        this.$router.push({name: 'home'});
+                        this.$router.push({name: 'posts'});
                     });
             }
         }

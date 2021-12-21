@@ -36,9 +36,9 @@
             addPost() {
   
                 this.axios
-                    .post('http://127.0.0.1:8000/api/post/add', this.post)
+                    .post('http://127.0.0.1:8000/api/post/create', this.post)
                     .then(response => (
-                        this.$router.push({name: 'home'})
+                        this.$router.push({name: 'posts'})
                         // console.log(response.data)
                     ))
                     .catch(error => console.log(error))

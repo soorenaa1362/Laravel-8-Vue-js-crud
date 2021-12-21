@@ -8,7 +8,8 @@
             <div class="collapse navbar-collapse">
                 <div class="navbar-nav">
                     <router-link to="/" class="nav-item nav-link">خانه</router-link>
-                    <router-link to="/add" class="nav-item nav-link">افزودن پست</router-link>
+                    <router-link to="/posts" class="nav-item nav-link">پست ها</router-link>
+                    <router-link to="/post/create" class="nav-item nav-link">افزودن پست</router-link>
                 </div>
             </div>
         </nav>

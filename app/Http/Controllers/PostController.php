@@ -16,7 +16,7 @@ class PostController extends Controller
     }
   
     // add post
-    public function add(Request $request)
+    public function create(Request $request)
     {
         $post = new Post([
             'title' => $request->input('title'),
